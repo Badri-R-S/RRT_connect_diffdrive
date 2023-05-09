@@ -40,4 +40,4 @@ sys
 2. https://drive.google.com/file/d/1Mv9Cjfk4DJ1g0I2kJGVleNDnsed8iYcI/view?usp=share_link
 
 # Github link :
-https://github.com/Irdab2000/Astar-diffdrive-robot
+https://github.com/Irdab2000/RRT_connect_diffdrive
