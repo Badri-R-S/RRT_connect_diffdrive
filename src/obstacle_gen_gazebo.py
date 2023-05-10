@@ -45,7 +45,6 @@ def pathu():
     obs.append(pygame.draw.rect(surface, color1, pygame.Rect(250-OBSTACLE_CLEARANCE, 70-OBSTACLE_CLEARANCE, 15+(2*OBSTACLE_CLEARANCE), 125+(2*OBSTACLE_CLEARANCE))))
     obs.append(pygame.draw.rect(surface, color1, pygame.Rect(150-OBSTACLE_CLEARANCE, 5-OBSTACLE_CLEARANCE, 15+(2*OBSTACLE_CLEARANCE), 125+(2*OBSTACLE_CLEARANCE))))
     obs.append(pygame.draw.circle(surface,color1,(400,90),55))
-    # obs.append(pygame.draw.polygon(surface,color1,Trianlge1))
 
 
     #initialize Shapes
@@ -54,8 +53,6 @@ def pathu():
     obs.append(pygame.draw.rect(surface, color, pygame.Rect(150, 5, 15, 125)))
     obs.append(pygame.draw.circle(surface,color,(400,90),50))
 
-    # obs.append(pygame.draw.polygon(surface,color,HexV))
-    # obs.append(pygame.draw.polygon(surface,color,Trianlge))
 
     running = True
     while running:
@@ -91,14 +88,3 @@ def obs_coord(x,y):
         # print("Kurukka Kowsik vandha 4",occupied_coords)
         ind=1
     return ind
-#pathu()
-# #Hexagon 
-    # if (x >= 231) and (x <= 369) and (y >= 15.0 + 0.577*(x-260)) and (y <= 232.5 - 0.577*(x-260)) and (y <= 230.5 + 0.577*(x-325.5)) and (y >= 20.0 - 0.577*(x-325.5)):
-    #     occupied_coords.append([x,y])
-    #     ind=1
-    # #triangle
-    # if (x>=455)and (-y+10 <= (-23/13)*(x - 455)) and (-y+240 >= (23/13)*(x-455))  :
-    #     occupied_coords.append([x,y])
-    #     ind=1
-    # return ind
-    # #triangle

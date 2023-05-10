@@ -29,6 +29,7 @@ sys
 3. To run just the 2D visualization of the algorithm, Please run the rrt_connect_ENPM661.py file using the command "python3 rrt_connect_661.py"
 4. To see the gazebo movement for the algorithm, First in a new terminal, launch the file using "roslaunch rrt_connect_ENPM661 turtlebot3_world.launch
 5. In another terminal, run the py file in the src folder, using "python3 control.py".
+6. If the robot seems to run erratically, please kill both the terminals and run both the files again.
 
 
 # Default values used for Part 2:

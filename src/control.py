@@ -30,7 +30,7 @@ def move_tbot3(veocity_publisher,path):
     speed = Twist()
 
     r = rospy.Rate(4)
-    n = len(path[2::3])
+    n = len(path[2::3]) #Number of points
     print(n)
     i = 0
     for node in path[2::3]: #For each node in the path
@@ -47,7 +47,7 @@ def move_tbot3(veocity_publisher,path):
                 speed.linear.x = 0.0
                 speed.angular.z = 0.0
                 veocity_publisher.publish(speed)
-                print("reached target")           #0.1 tolerance
+                print("reached target")           
                 print("x = ",target_xpos)
                 print("y = ",target_ypos)
                 print("x_robot = ",x)
@@ -85,7 +85,7 @@ def main(args):
   start.state = [x_s,y_s]
   start.parent = None
   goal = Node()
-  goal.state = [x_g,200-y_g]
+  goal.state = [x_g,200-y_g]    #For pygame, the y coordinate starts from top left.
   goal.parent = None
   forward_visited.append(start)
   backward_visited.append(goal)  
